@@ -20,8 +20,8 @@ cleanup() {
 trap cleanup SIGINT SIGTERM
 
 # 2. 启动 Flask 后端
-echo "Starting Flask server on port 5000..."
-flask run --host=0.0.0.0 --port=5000 &
+echo "Starting Flask server on port 5001..."
+flask run --host=0.0.0.0 --port=5001 &
 
 # 3. 启动 Celery Default Worker
 echo "Starting Celery default worker..."

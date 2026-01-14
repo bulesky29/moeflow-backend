@@ -11,6 +11,6 @@ ENV MOEFLOW_BUILD_ID=${MOEFLOW_BUILD_ID}
 COPY . /app
 WORKDIR /app
 
-EXPOSE 5000
+EXPOSE 5001
 
 RUN BIN_PREFIX=/usr/local/bin make babel-update-mo
